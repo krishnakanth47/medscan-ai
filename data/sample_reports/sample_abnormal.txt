@@ -1,0 +1,25 @@
+PATIENT REPORT
+==============
+Name: John Doe
+Age: 45   Sex: Male
+Date: 2024-03-15
+
+COMPLETE BLOOD COUNT
+--------------------
+Hemoglobin       : 10.2   g/dL       (Reference: 13.5-17.5)
+RBC Count        : 4.5    x10^6/uL   (Reference: 4.7-6.1)
+WBC Count        : 12.5   x10^3/uL   (Reference: 4.0-11.0)
+Platelet Count   : 95     x10^3/uL   (Reference: 150-400)
+
+BIOCHEMISTRY
+------------
+Glucose Fasting  : 148    mg/dL      (Reference: 70-99)
+Total Cholesterol: 265    mg/dL      (Reference: <200)
+Creatinine       : 1.8    mg/dL      (Reference: 0.74-1.35)
+Blood Urea       : 62     mg/dL      (Reference: 7-25)
+
+VITALS
+------
+Blood Pressure   : 148/96  mmHg      (Reference: 120/80)
+
+--- END OF REPORT ---
