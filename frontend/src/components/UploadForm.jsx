@@ -6,7 +6,7 @@ import { useDropzone } from 'react-dropzone'
 import { Upload, FileText, AlertCircle, Loader2, Wifi, WifiOff, RefreshCw } from 'lucide-react'
 import axios from 'axios'
 
-const API = '/api'
+const API = import.meta.env.VITE_API_URL
 const MAX_SIZE = 10 * 1024 * 1024  // 10 MB
 const ACCEPTED = { 'application/pdf': ['.pdf'], 'image/jpeg': ['.jpg', '.jpeg'], 'image/png': ['.png'] }
 
