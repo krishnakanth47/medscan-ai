@@ -187,8 +187,7 @@ function HeroSection() {
              AI-powered insights, risk detection, and actionable recommendations.
         </p>
 
-        <div className="flex flex-wrap justify-center gap-3 text-xs font-medium">
-
+        <div className="flex flex-wrap justify-center gap-3 text-xs font-medium max-w-2xl mx-auto">
           {[
             'OCR Text Extraction',
             '9 Biomarkers',
