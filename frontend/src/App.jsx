@@ -24,7 +24,6 @@ function Header() {
             xmlns="http://www.w3.org/2000/svg"
             style={{ filter: 'drop-shadow(0 0 6px rgba(59,130,246,0.5))' }}
           >
-
             {/* Brain outline */}
             <path
               d="M19 5C13 5 8 9.5 8 15.5C8 18.5 9.2 21.2 11.2 23.2L11 30H27L26.8 23.2C28.8 21.2 30 18.5 30 15.5C30 9.5 25 5 19 5Z"
@@ -37,54 +36,13 @@ function Header() {
             <circle cx="28" cy="17" r="1" fill="#38BDF8" opacity="0.7" />
             <circle cx="25" cy="20" r="1" fill="#38BDF8" opacity="0.6" />
 
-            <line
-              x1="26"
-              y1="13"
-              x2="28"
-              y2="17"
-              stroke="#38BDF8"
-              strokeWidth="0.8"
-              opacity="0.7"
-            />
-
-            <line
-              x1="28"
-              y1="17"
-              x2="25"
-              y2="20"
-              stroke="#38BDF8"
-              strokeWidth="0.8"
-              opacity="0.6"
-            />
+            <line x1="26" y1="13" x2="28" y2="17" stroke="#38BDF8" strokeWidth="0.8" opacity="0.7" />
+            <line x1="28" y1="17" x2="25" y2="20" stroke="#38BDF8" strokeWidth="0.8" opacity="0.6" />
 
             {/* Medical cross */}
-            <rect
-              x="15"
-              y="10"
-              width="8"
-              height="8"
-              rx="1.5"
-              fill="#1E40AF"
-              opacity="0.85"
-            />
-
-            <rect
-              x="18"
-              y="11.5"
-              width="2"
-              height="5"
-              rx="0.5"
-              fill="white"
-            />
-
-            <rect
-              x="16.5"
-              y="13"
-              width="5"
-              height="2"
-              rx="0.5"
-              fill="white"
-            />
+            <rect x="15" y="10" width="8" height="8" rx="1.5" fill="#1E40AF" opacity="0.85" />
+            <rect x="18" y="11.5" width="2" height="5" rx="0.5" fill="white" />
+            <rect x="16.5" y="13" width="5" height="2" rx="0.5" fill="white" />
 
             {/* Stethoscope arc */}
             <path
@@ -95,12 +53,7 @@ function Header() {
               strokeLinecap="round"
             />
 
-            <circle
-              cx="11"
-              cy="24.5"
-              r="1.5"
-              fill="#3B82F6"
-            />
+            <circle cx="11" cy="24.5" r="1.5" fill="#3B82F6" />
 
             {/* Magnifier */}
             <circle
@@ -226,31 +179,36 @@ function HeroSection() {
         </span>
       </h1>
 
-      <p className="text-slate-400 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-        Upload any medical report — PDF or image — and instantly get
-        AI-powered insights, risk detection, and actionable recommendations.
-      </p>
+      {/* FIXED ALIGNMENT WRAPPER */}
+      <div className="max-w-xl mx-auto">
 
-      {/* Feature pills */}
-      <div className="flex flex-wrap justify-center gap-3 text-xs font-medium">
+        <p className="text-slate-400 text-lg mb-8 leading-relaxed">
+          Upload any medical report — PDF or image — and instantly get
+          AI-powered insights, risk detection, and actionable recommendations.
+        </p>
 
-        {[
-          'OCR Text Extraction',
-          '9 Biomarkers',
-          'Risk Detection',
-          'PDF Export',
-          'Instant Results'
-        ].map(f => (
-          <span
-            key={f}
-            className="flex items-center gap-1.5 bg-slate-800/80 border border-slate-700/60 text-slate-400 px-4 py-2 rounded-full"
-          >
-            <ChevronRight className="w-3 h-3 text-blue-500" />
-            {f}
-          </span>
-        ))}
+        <div className="flex flex-wrap justify-center gap-3 text-xs font-medium">
+
+          {[
+            'OCR Text Extraction',
+            '9 Biomarkers',
+            'Risk Detection',
+            'PDF Export',
+            'Instant Results'
+          ].map(f => (
+            <span
+              key={f}
+              className="flex items-center gap-1.5 bg-slate-800/80 border border-slate-700/60 text-slate-400 px-4 py-2 rounded-full"
+            >
+              <ChevronRight className="w-3 h-3 text-blue-500" />
+              {f}
+            </span>
+          ))}
+
+        </div>
 
       </div>
+
     </div>
   )
 }
