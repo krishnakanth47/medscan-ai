@@ -183,8 +183,8 @@ function HeroSection() {
       <div className="max-w-xl mx-auto">
 
         <p className="text-slate-400 text-lg mb-8 leading-relaxed">
-          Upload any medical report — PDF or image — and instantly get
-          AI-powered insights, risk detection, and actionable recommendations.
+             Upload any medical report — PDF or image — and instantly get
+             AI-powered insights, risk detection, and actionable recommendations.
         </p>
 
         <div className="flex flex-wrap justify-center gap-3 text-xs font-medium">
